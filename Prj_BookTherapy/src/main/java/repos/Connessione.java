@@ -15,7 +15,6 @@ public class Connessione {
 	private void connetti() {
 		
 		try {
-			
 			this.conn = DriverManager.getConnection(HOST, USER, PASS);
 		System.out.println("Connesso al DB");
 			
