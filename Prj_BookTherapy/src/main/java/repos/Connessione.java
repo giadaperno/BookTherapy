@@ -39,9 +39,9 @@ public class Connessione {
 
     public Connection getConn() {
         if (conn == null) connetti();
+
         return this.conn;    
     }
 }
-
 
 
