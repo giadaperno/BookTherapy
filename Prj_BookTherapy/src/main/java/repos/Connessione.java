@@ -4,6 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
 @Component
 public class Connessione {
 
@@ -36,8 +39,9 @@ public class Connessione {
 
     public Connection getConn() {
         if (conn == null) connetti();
-        return this.conn;
+        return this.conn;    
     }
+}
 
-    }
+
 
