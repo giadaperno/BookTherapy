@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-image: url('sfondo-book-therapy.jpg'); /* o sfondo.png / sfondo.webp */
+  background-size: cover;        /* Adatta l’immagine a tutto lo schermo */
+  background-position: center;   /* Centra l’immagine */
+  background-repeat: no-repeat;  /* Non ripetere l’immagine */
+  height: 95vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    gap: 20px; /* Spazio tra logo e form */
+}
+
+/* Logo centrato sopra e più piccolo del form */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px; /* Spazio tra logo e form */
+}
+
+.logo-container img {
+    max-width: 150px; /* più piccolo del form */
+}
+
+.form-container {
+    background-color: rgb(190, 233, 205);
+    padding: 60px 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spinge il bottone in basso */
+    height: 500px; /* Imposta un'altezza fissa sufficiente */
+}
+
+.form-container h2 {
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 45px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #8add8d;
+    color: rgb(0, 0, 0);
+    align-self: center; /* centra il bottone orizzontalmente nel flex container */
+}
+
+input::-webkit-search-cancel-button,
+input::-webkit-clear-button,
+input::-ms-clear {
+    display: none !important;
+    height: 0;
+    width: 0;
+}
