@@ -1,8 +1,5 @@
 package repos;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -18,12 +15,15 @@ public class Connessione {
     @Value("${spring.datasource.password}")
     private String PASS;
 
+
     private Connection conn;
 
     private void connetti() {
         try {
+
             System.setProperty("javax.net.ssl.trustStore", "src/main/resources/keystore.jks");
             System.setProperty("javax.net.ssl.trustStorePassword", "changeit");
+
 
             this.conn = DriverManager.getConnection(HOST, USER, PASS);
             System.out.println("Connesso al DB Aiven");
@@ -38,4 +38,6 @@ public class Connessione {
         if (conn == null) connetti();
         return this.conn;
     }
+
     }
+
