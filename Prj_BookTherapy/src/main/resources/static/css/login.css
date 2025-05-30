@@ -7,15 +7,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-     background-image: url('sfondo-book-therapy.jpg'); /* o sfondo.png / sfondo.webp */
-  background-size: cover;        /* Adatta l’immagine a tutto lo schermo */
-  background-position: center;   /* Centra l’immagine */
-  background-repeat: no-repeat;  /* Non ripetere l’immagine */
-  height: 95vh;
+    background-image: url(../images/login/03-sfondo.jpg); /* o sfondo.png / sfondo.webp */
+    background-size: cover;        /* Adatta l’immagine a tutto lo schermo */
+    background-position: center;   /* Centra l’immagine */
+    background-repeat: no-repeat;  /* Non ripetere l’immagine */
+    height: 95vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-container {
