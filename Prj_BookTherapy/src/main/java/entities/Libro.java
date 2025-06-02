@@ -102,4 +102,8 @@ public class Libro {
     
     
 
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
