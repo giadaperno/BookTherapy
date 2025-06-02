@@ -18,19 +18,19 @@ public class Libro {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@NotBlank(message = "Il titolo è obbligatorio")
+	//@NotBlank(message = "Il titolo è obbligatorio")
 	@Column(name = "titolo", nullable = false)
 	private String titolo;
 	
-	@NotBlank(message = "L'autore è obbligatorio")
+	//@NotBlank(message = "L'autore è obbligatorio")
     @Column(name = "autore", nullable = false)
     private String autore;
 	
-    @NotNull(message = "Il prezzo è obbligatorio")
+    //@NotNull(message = "Il prezzo è obbligatorio")
     @Column(name = "prezzo", precision = 10, scale = 2)// precision =10 numero totale di cifre prima della virgola, scale=2 cifre dopo la virgola
     private BigDecimal prezzo; //BigDecimal gestisce meglio i prezzi perchè non si rischia di avere troppe cifre inutili dopo la virgola
     
-    @NotNull (message = "L'ISBN è obbligatorio")
+    //@NotBlank(message = "L'ISBN è obbligatorio")
     @Column (name = "ISBN", nullable = false)
     private String isbn;
 
@@ -99,19 +99,9 @@ public class Libro {
 		builder.append("]");
 		return builder.toString();
 	}
-    
-    
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+// Questo codice definisce una classe Libro che rappresenta un'entità di un libro con attributi come id, titolo, autore, prezzo e ISBN.
+// La classe utilizza annotazioni JPA per la mappatura a una tabella del database e include validazioni per garantire che i campi obbligatori siano forniti.
 }
-=======
-}
->>>>>>> Stashed changes
-=======
-}
->>>>>>> Stashed changes
-=======
-}
->>>>>>> Stashed changes
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
