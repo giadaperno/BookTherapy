@@ -103,5 +103,4 @@ public class Libro {
 // Questo codice definisce una classe Libro che rappresenta un'entità di un libro con attributi come id, titolo, autore, prezzo e ISBN.
 // La classe utilizza annotazioni JPA per la mappatura a una tabella del database e include validazioni per garantire che i campi obbligatori siano forniti.
 }
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+
