@@ -16,7 +16,7 @@ public class Libro {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	//@NotBlank(message = "Il titolo è obbligatorio")
 	@Column(name = "titolo", nullable = false)
@@ -30,11 +30,11 @@ public class Libro {
     @Column(name = "prezzo", precision = 10, scale = 2)// precision =10 numero totale di cifre prima della virgola, scale=2 cifre dopo la virgola
     private BigDecimal prezzo; //BigDecimal gestisce meglio i prezzi perchè non si rischia di avere troppe cifre inutili dopo la virgola
     
-    //@NotBlank(message = "L'ISBN è obbligatorio")
+    //@NotNull (message = "L'ISBN è obbligatorio")
     @Column (name = "ISBN", nullable = false)
     private String isbn;
 
-	public Libro(int id, String titolo, String autore, BigDecimal prezzo, String isbn) {
+	public Libro(Long id, String titolo, String autore, BigDecimal prezzo, String isbn) {
 		super();
 		this.id = id;
 		this.titolo = titolo;
@@ -43,11 +43,11 @@ public class Libro {
 		this.isbn = isbn;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -99,8 +99,9 @@ public class Libro {
 		builder.append("]");
 		return builder.toString();
 	}
+    
+    
 
-// Questo codice definisce una classe Libro che rappresenta un'entità di un libro con attributi come id, titolo, autore, prezzo e ISBN.
-// La classe utilizza annotazioni JPA per la mappatura a una tabella del database e include validazioni per garantire che i campi obbligatori siano forniti.
 }
-
+// Nota: Per utilizzare le annotazioni come @NotBlank e @NotNull, è necessario importare le dipendenze di validazione (javax.validation.constraints) nel progetto.
+// Queste annotazioni possono essere utilizzate per la validazione dei campi durante la creazione o l'aggiornamento di un libro.
