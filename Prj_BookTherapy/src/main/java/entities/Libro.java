@@ -11,7 +11,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Table;
 
 @Entity
-@Table
+
+@Table (name = "libri") // Nome della tabella nel database
+
 public class Libro {
 	
 	@Id
