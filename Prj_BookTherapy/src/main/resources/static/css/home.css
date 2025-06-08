@@ -67,17 +67,17 @@
   color: #1a3e2e;
 }
 
-/* wrapper che affianca le due sezioni */
+/*wrapper che affianca le due sezioni*/
 .choose-features-wrapper {
   display: flex;
-  gap: 40px;
+  gap: 50px;
   padding: 40px 20px;
   flex-wrap: wrap;
   justify-content: center;
   background: #f7faf7;
 }
 
-/* sezione why-choose e features uguale larghezza */
+/*sezione why-choose e features uguale larghezza*/
 .why-choose, .features {
   flex: 1 1 450px;
   background: white;
@@ -87,21 +87,22 @@
   color: #1a3e2e;
 }
 
-/* titoli delle sezioni */
+
+/*titoli delle sezioni*/
 .why-choose h2, .features h2 {
   font-size: 2em;
   margin-bottom: 30px;
 }
 
-/* griglia 2 colonne per le card */
+/*griglia 2 colonne per le card*/
 .reasons, .features-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 25px 30px;
+  gap: 30px 5px;
   justify-items: center;
 }
 
-/* card comuni */
+/*card comuni*/
 .reason, .feature {
   border-radius: 20px;
   padding: 20px 15px;
@@ -112,7 +113,8 @@
   cursor: default;
 }
 
-/* card .feature: verde scuro con testo bianco */
+
+/*card .feature: verde scuro con testo bianco*/
 .feature {
   background: #a8d5ba;
   color: white;
@@ -123,7 +125,7 @@
   box-shadow: 3px 8px 16px rgba(0,0,0,0.15);
 }
 
-/* card .reason: verde chiaro con testo scuro */
+/*card .reason: verde chiaro con testo scuro*/
 .reason {
   background: #e6f0e8;
   color: #1a3e2e;
@@ -135,7 +137,8 @@
   box-shadow: 0 12px 24px rgba(26, 62, 46, 0.2);
 }
 
-/* icone grandi sopra testo */
+
+/*icone grandi sopra testo*/
 .feature i, .reason i {
   border-radius: 50%;
   margin-bottom: 20px;
@@ -145,7 +148,7 @@
   cursor: default;
 }
 
-/* icone .feature: icona bianca su sfondo verde scuro */
+/*icone .feature: icona bianca su sfondo verde scuro*/
 .feature i {
   font-size: 1.5em;
   color: white;
@@ -153,7 +156,8 @@
   padding: 12px;
 }
 
-/* icone .reason: icona verde scuro su sfondo verde chiaro */
+
+/*icone .reason: icona verde scuro su sfondo verde chiaro*/
 .reason i {
   font-size: 2em;
   color: #1a3e2e;
@@ -162,26 +166,30 @@
   margin-bottom: 15px;
 }
 
-/* titoli card */
+
+/*titoli card*/
 .reason h3, .feature h3 {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 1.3em;
 }
 
-/* titolo h3 .why-choose con colore e peso */
+
+/*titolo h3 .why-choose con colore e peso*/
 .why-choose h3 {
   color: #145c3d;
   font-weight: 600;
 }
 
-/* paragrafi card */
+
+/*paragrafi card*/
 .reason p, .feature p {
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* testo centrato per features, sinistro per why-choose */
+
+/*testo centrato per features, sinistro per why-choose*/
 .features {
   text-align: center;
 }
