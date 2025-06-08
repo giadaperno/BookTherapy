@@ -1,0 +1,191 @@
+/*sezione frase e libri*/
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 80px 20px;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  max-width: 500px;
+}
+
+/*pulsante inizia ora*/
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #1a3e2e;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #145c3d;
+}
+
+.hero-images img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+/*sezione motivazionale*/
+.motivational {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  color: #1a3e2e;
+}
+
+.motivational h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.motivational p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.motivation-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.2em;
+}
+
+.motivation-stats i {
+  margin-right: 8px;
+  color: #1a3e2e;
+}
+
+/* wrapper che affianca le due sezioni */
+.choose-features-wrapper {
+  display: flex;
+  gap: 40px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f7faf7;
+}
+
+/* sezione why-choose e features uguale larghezza */
+.why-choose, .features {
+  flex: 1 1 450px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  color: #1a3e2e;
+}
+
+/* titoli delle sezioni */
+.why-choose h2, .features h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* griglia 2 colonne per le card */
+.reasons, .features-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 30px;
+  justify-items: center;
+}
+
+/* card comuni */
+.reason, .feature {
+  border-radius: 20px;
+  padding: 20px 15px;
+  width: 100%;
+  max-width: 220px;
+  box-shadow: 3px 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+/* card .feature: verde scuro con testo bianco */
+.feature {
+  background: #a8d5ba;
+  color: white;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 8px 16px rgba(0,0,0,0.15);
+}
+
+/* card .reason: verde chiaro con testo scuro */
+.reason {
+  background: #e6f0e8;
+  color: #1a3e2e;
+  box-shadow: 0 4px 8px rgba(26, 62, 46, 0.1);
+}
+
+.reason:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(26, 62, 46, 0.2);
+}
+
+/* icone grandi sopra testo */
+.feature i, .reason i {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+/* icone .feature: icona bianca su sfondo verde scuro */
+.feature i {
+  font-size: 1.5em;
+  color: white;
+  background-color: #1a3e2e;
+  padding: 12px;
+}
+
+/* icone .reason: icona verde scuro su sfondo verde chiaro */
+.reason i {
+  font-size: 2em;
+  color: #1a3e2e;
+  background-color: #a8d5ba;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* titoli card */
+.reason h3, .feature h3 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+/* titolo h3 .why-choose con colore e peso */
+.why-choose h3 {
+  color: #145c3d;
+  font-weight: 600;
+}
+
+/* paragrafi card */
+.reason p, .feature p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* testo centrato per features, sinistro per why-choose */
+.features {
+  text-align: center;
+}
+
+.why-choose {
+  text-align: left;
+}
