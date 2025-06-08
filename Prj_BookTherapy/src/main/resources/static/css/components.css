@@ -1,23 +1,50 @@
-/*navbar*/
+/*navbar principale con sfondo verde scuro e bordo stondato sotto*/
 nav {
   background-color: #7fbf96;
-  padding: 15px 20px;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 0 0 15px 15px;
 }
 
+/*lista link orizzontale centrata con spazio tra voci*/
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
   justify-content: center;
+  align-items: center;
 }
 
+/*link principali bianchi con transizione morbida*/
 nav a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.1em;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
 }
 
+/*effetto underline animato che parte da sinistra*/
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 10%;
+  bottom: 6px;
+  background-color: #a8d5ba;
+  transition: width 0.3s ease;
+}
+
+/*al passaggio: sfondo chiaro, testo verde scuro e underline che si espande*/
 nav a:hover {
-  text-decoration: underline;
+  background-color: #e6f0e8;
+  color: #1a3e2e;
+}
+
+nav a:hover::after {
+  width: 80%;
 }
