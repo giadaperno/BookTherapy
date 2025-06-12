@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PrjBookTherapyApplication<libreria-Spring>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.booktherapy.PrjBookTherapyApplication",
+            "projectName": "libreria-Spring",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
