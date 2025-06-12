@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Book Therapy</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+ <div class="page-container">
+    <form id="loginForm" class="form-container">
+      
+      <!-- LOGO DENTRO IL FORM -->
+      <div class="logo-container">
+        <img src="/images/login/02-logo.png" alt="Logo">
+      </div>
+
+        <h2>Login</h2>
+        <label for="username">Username (max:50):
+            <input type="text" id="username" required  maxlength="50" >
+        </label>
+
+        <label for="email">Email (max:100):
+            <input type="email" id="email" required maxlength="100">
+        </label>
+
+        <label for="password">Password (max:255):
+            <input type="password" id="password" required  maxlength="255">
+        </label>
+        <button type="submit">Login</button>
+    </form>
+    <div class="registrati-link">
+      Non hai un account?
+      <a href="registrati.html">Registrati</a>
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
