@@ -14,7 +14,8 @@ public class LibroService {
 
     private final LibroRepository libroRepository;
 
-    @Autowired // Inietta automaticamente un'istanza di LibroRepository
+    @Autowired // Inietta automaticamente un'istanza di LibroRepository nel costruttore
+    // per poter utilizzare i metodi di accesso ai dati
     public LibroService(LibroRepository libroRepository) {
         this.libroRepository = libroRepository;
     }
