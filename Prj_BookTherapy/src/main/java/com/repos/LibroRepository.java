@@ -1,4 +1,4 @@
-package repos;
+package com.repos;
 
 import java.math.BigDecimal;
 import java.util.List;

@@ -1,4 +1,4 @@
-package repos;
+package com.repos;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

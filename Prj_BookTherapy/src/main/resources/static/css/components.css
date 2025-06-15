@@ -6,7 +6,7 @@ nav {
   border-radius: 0 0 15px 15px;
 }
 
-/*lista link orizzontale centrata con spazio tra voci*/
+/*lista navbar orizzontale centrata con spazio tra i pulsanti*/
 nav ul {
   list-style: none;
   display: flex;

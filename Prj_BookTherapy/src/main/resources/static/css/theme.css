@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*testo generale della pagina*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #e6f4ea, #a8d5ba);
+    color: #1a3e2e;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
